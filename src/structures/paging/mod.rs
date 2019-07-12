@@ -4,8 +4,6 @@
 
 pub use self::frame::PhysFrame;
 pub use self::frame_alloc::{FrameAllocator, FrameDeallocator};
-#[doc(no_inline)]
-pub use self::mapper::MappedPageTable;
 #[cfg(target_arch = "x86_64")]
 #[doc(no_inline)]
 pub use self::mapper::{MappedPageTable, OffsetPageTable, RecursivePageTable};
